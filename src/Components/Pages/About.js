@@ -93,7 +93,7 @@ export class About extends Component {
 						gridTemplateAreas: '"list1 list2"',
 						placeItems: 'center',
 						fontSize: '0.9em',
-						height: '100%',
+						height: '75%',
 					}}>
 					<ul style={{ gridArea: 'list1' }}>
 						<li style={this.liStyle()}>HTML</li>

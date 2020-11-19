@@ -19,7 +19,10 @@ export class TextBox extends Component {
 	};
 	render() {
 		return (
-			<span className='textbox' style={this.props.textbox}>
+			<span
+				className='textbox'
+				style={this.props.textbox}
+				onClick={this.props.onClick}>
 				{this.props.content}
 			</span>
 		);

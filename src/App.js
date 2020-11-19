@@ -21,6 +21,13 @@ import Header from './Components/Layout/Header';
 import Footer from './Components/Layout/Footer';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
+import Projects from './Components/Pages/Projects';
+import Contact from './Components/Pages/Contact';
+import Twitch from './Components/Pages/Projects/Twitch';
+import Capstonia from './Components/Pages/Projects/Capstonia';
+import Calculator from './Components/Pages/Projects/Calculator';
+import Sports from './Components/Pages/Projects/Sports';
+import Weather from './Components/Pages/Projects/Weather';
 
 library.add(fab, faHome, faAddressCard, faProjectDiagram, faComments);
 
@@ -32,8 +39,13 @@ class App extends React.Component {
 					<Header />
 					<Route exact path='/' component={Home} />
 					<Route path='/about' component={About} />
-					{/* <Route path='/projects' component={Projects} />
-					<Route path='/contact' component={Content} /> */}
+					<Route path='/projects' component={Projects} />
+					<Route path='/contact' component={Contact} />
+					<Route path='/twitch' component={Twitch} />
+					<Route path='/capstonia' component={Capstonia} />
+					<Route path='/calculator' component={Calculator} />
+					<Route path='/sports' component={Sports} />
+					<Route path='/weather' component={Weather} />
 					<Footer />
 				</div>
 			</Router>
